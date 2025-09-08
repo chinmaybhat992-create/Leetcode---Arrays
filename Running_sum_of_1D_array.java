@@ -16,3 +16,9 @@ class Solution {
        return ans;
     }
 }
+
+/*This is O(N) TC but the input array itself is modified which is not a good habit*/
+for(int i=1;i<nums.length;i++){
+            nums[i]=nums[i-1]+nums[i];
+
+        }
